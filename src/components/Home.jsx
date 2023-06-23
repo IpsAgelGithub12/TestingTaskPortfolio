@@ -54,7 +54,7 @@ const Home = () => {
           </div>
 
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <my2x2pic className="cursor-pointer" size={20} />
+            <iconCSS className="cursor-pointer" size={20} />
             <FaInstagram className="cursor-pointer" size={20} />
             <FaLinkedinIn className="cursor-pointer" size={20} />
             <FaYoutube className="cursor-pointer" size={20} />
