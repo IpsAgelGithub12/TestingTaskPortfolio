@@ -13,21 +13,53 @@ const Sidenav = () => {
     setNav(!nav);
     // console.log("State Changed");
   };
+  const [colorChange, setColorchange] = useState(true);
+  const [scrollY, setscrollY] = useState(window.scrollY);
+  const changeNavbarColor = () => {
+    if (window.scrollY < scrollY) {
+      setColorchange(true);
+    } else {
+      setscrollY(window.scrollY);
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
+
+  const classNav = window.scrollY
+    ? "bg-[#373d49]  opacity-95 bg shadow-md"
+    : null;
+
   return (
     <div>
-      <AiOutlineMenu
-        onClick={handleNav}
-        className="absolute top-4 right-4 z-[99] md:hidden lg:hidden"
-      />
-      {nav ? (
-        <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
+      <div
+        className={
+          colorChange
+            ? `${classNav} z-20 fixed flex ease-in-out duration-500 items-center top-0 w-screen h-16 text-white `
+            : `fixed  z-20 flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`
+        }
+      >
+        <AiOutlineMenu
+          onClick={handleNav}
+          className={
+            classNav
+              ? "absolute top-4 right-10 z-[10] md:hidden lg:hidden size={20} text-white"
+              : "absolute top-4 right-10 z-[10] md:hidden lg:hidden text-gray-800"
+          }
+          size={30}
+        />
+      </div>
+      {nav && (
+        <div
+          onClick={handleNav}
+          className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20"
+        >
           <a
             onClick={handleNav}
             href="#Home"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineHome size={20} />
-            <span className="pl-4">Home</span>
+            <span className="pl-4 font-bold">Home</span>
           </a>
           <a
             onClick={handleNav}
@@ -35,7 +67,7 @@ const Sidenav = () => {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineUser size={20} />
-            <span className="pl-4">Profile</span>
+            <span className="pl-4 font-bold">Profile</span>
           </a>
           <a
             onClick={handleNav}
@@ -43,7 +75,7 @@ const Sidenav = () => {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineAppstore size={20} />
-            <span className="pl-4">Work Experience</span>
+            <span className="pl-4 font-bold">Work Experience</span>
           </a>
           <a
             onClick={handleNav}
@@ -51,11 +83,9 @@ const Sidenav = () => {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
-            <span className="pl-4">Projects</span>
+            <span className="pl-4 font-bold">Projects</span>
           </a>
         </div>
-      ) : (
-        ""
       )}
 
       <div className="md:block hidden lg:hidden fixed top-[25%] z-10">
@@ -87,46 +117,58 @@ const Sidenav = () => {
         </div>
       </div>
 
-      <div className="lg:block hidden fixed top-[10%] right-[5%] z-10">
-        <div className="flex h-12">
-          <a
-            href="#Home"
-            className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
-          >
-            <div className="flex p-3">
-              <AiOutlineHome size={20} className="mr-2" />
-              <span>Home</span>
+      <div className={classNav ? "lg:block hidden" : "hidden"}>
+        <div
+          className={
+            colorChange
+              ? `${classNav} z-20 fixed flex justify-end ease-in-out px-16 duration-500 items-center  top-0 w-screen h-16 text-white `
+              : `fixed  z-20 flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`
+          }
+        >
+          <div>
+            <div className="flex h-12 right-[2%]">
+              <a
+                href="#Home"
+                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+              >
+                <div className="flex p-3">
+                  <AiOutlineHome size={20} className="mr-2" />
+                  <span>Home</span>
+                </div>
+              </a>
+              <a
+                href="#Profile"
+                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+              >
+                <div className="flex p-3">
+                  <AiOutlineUser size={20} className="mr-2" />
+                  <span>Profile</span>
+                </div>
+              </a>
+              <a
+                href="#Experience"
+                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+              >
+                <div className="flex p-3">
+                  <AiOutlineAppstore size={20} className="mr-2" />
+                  <span>Experience</span>
+                </div>
+              </a>
+              <a
+                href="#Projects"
+                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+              >
+                <div className="flex p-3">
+                  <AiOutlineProject size={20} className="mr-2" />
+                  <span>Projects</span>
+                </div>
+              </a>
             </div>
-          </a>
-          <a
-            href="#Profile"
-            className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
-          >
-            <div className="flex p-3">
-              <AiOutlineUser size={20} className="mr-2" />
-              <span>Profile</span>
-            </div>
-          </a>
-          <a
-            href="#Experience"
-            className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
-          >
-            <div className="flex p-3">
-              <AiOutlineAppstore size={20} className="mr-2" />
-              <span>Experience</span>
-            </div>
-          </a>
-          <a
-            href="#Projects"
-            className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
-          >
-            <div className="flex p-3">
-              <AiOutlineProject size={20} className="mr-2" />
-              <span>Projects</span>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
+
+      <div className="fixed block bottom-0 bg-[#001b5e] w-full h-12 z-10"></div>
     </div>
   );
 };

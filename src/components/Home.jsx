@@ -1,5 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import iconCSS from "../assets/css.png";
+import my2x2pic from "../assets/2x2.jpg";
 import {
   FaFacebookF,
   FaInstagram,
@@ -16,9 +18,9 @@ const Home = () => {
         alt=""
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
-        <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+        <div className="max-w-[80%] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="font-bold">HI MY NAME IS</h1>
-          <h2 className="font-bold">
+          <div className="font-bold">
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
@@ -32,9 +34,27 @@ const Home = () => {
               style={{ fontSize: "2em", display: "inline-block" }}
               repeat={Infinity}
             />
-          </h2>
+          </div>
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
             <FaFacebookF className="cursor-pointer" size={20} />
+            <FaInstagram className="cursor-pointer" size={20} />
+            <FaLinkedinIn className="cursor-pointer" size={20} />
+            <FaYoutube className="cursor-pointer" size={20} />
+          </div>
+
+          <div className="lg:p-0 p-5 mt-5 flex flex-col justify-center max-w-[650px] w-full lg:text-left text-center">
+            <h2 className="font-bold">OBJECTIVE</h2>
+            <p className="text-base font-normal text-stone-500">
+              I am looking for a full-time position as a software developer. I
+              would like to utilize my skills and experience. Moreover, I would
+              like to work with other professionals to improve my skills as a
+              software developer which will allow me to further contribute in
+              the field of Information Technology.
+            </p>
+          </div>
+
+          <div className="flex justify-between pt-6 max-w-[200px] w-full">
+            <my2x2pic className="cursor-pointer" size={20} />
             <FaInstagram className="cursor-pointer" size={20} />
             <FaLinkedinIn className="cursor-pointer" size={20} />
             <FaYoutube className="cursor-pointer" size={20} />

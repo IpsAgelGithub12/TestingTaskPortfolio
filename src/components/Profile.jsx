@@ -1,13 +1,26 @@
 import React from "react";
 import my2x2pic from "../assets/2x2.jpg";
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const Profile = () => {
+  useEffect(function () {
+    Aos.init({
+      offset: 850,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div id="Profile">
       <img
-        className="absolute w-full h-[30%] object-cover object-left"
+        data-aos="fade-down"
+        className="absolute w-full h-[30%] object-cover"
         src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1085&q=80"
-        alt=""
+        alt="Banner"
       />
       <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
         <h1 className="text-4xl font-bold text-center text-[#001b5e] mt-5 mb-5">
