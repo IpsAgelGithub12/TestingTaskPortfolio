@@ -18,6 +18,7 @@ import iconSqlServer from "../assets/sqlserver.png";
 import iconVbnet from "../assets/vbnet.png";
 import iconVb6 from "../assets/vb6.png";
 import iconVite from "../assets/vitejs.png";
+import Background from "../assets/background.jpg";
 import { ToolTip } from "./ToolTip";
 import {
   FaFacebookF,
@@ -31,8 +32,9 @@ const Home = () => {
     <div id="Home">
       <img
         // data-aos="fade-down"
-        className="w-full h-screen object-cover object-left opacity-[25%]"
-        src="https://media.istockphoto.com/id/1434947698/photo/working-computer-email-and-business-man-from-china-serious-about-fixing-a-laptop-glitch.jpg?s=2048x2048&w=is&k=20&c=4EbKCdbTwpQYpiVVVeSEtBPctjYoqP363pu3kXmncnU="
+        className="w-full h-screen object-cover object-right opacity-[30%]"
+        // src="https://media.istockphoto.com/id/1434947698/photo/working-computer-email-and-business-man-from-china-serious-about-fixing-a-laptop-glitch.jpg?s=2048x2048&w=is&k=20&c=4EbKCdbTwpQYpiVVVeSEtBPctjYoqP363pu3kXmncnU="
+        src={Background}
         alt=""
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
@@ -64,7 +66,7 @@ const Home = () => {
             <h2 id="objerctive" className="font-bold">
               OBJECTIVE
             </h2>
-            <p className="text-base font-normal text-stone-500">
+            <p className="text-base font-normal text-stone-600">
               I am looking for a full-time position as a software developer. I
               would like to utilize my skills and experience. Moreover, I would
               like to work with other professionals to improve my skills as a
