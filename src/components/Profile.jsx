@@ -62,7 +62,7 @@ const Profile = () => {
               <AiOutlineDesktop className="text-white" size={25} />
             </div>
             <p className="my-2 text-base font-normal text-stone-200">
-              I can developed application using vitejs,react,tailwind and other
+              I can create application using vitejs, react, tailwind and other
               tools and frameworks.
             </p>
           </div>
