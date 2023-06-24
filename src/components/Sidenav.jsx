@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AiOutlineMenu,
   AiOutlineHome,
@@ -13,8 +13,11 @@ const Sidenav = () => {
     setNav(!nav);
     // console.log("State Changed");
   };
+
   const [colorChange, setColorchange] = useState(true);
   const [scrollY, setscrollY] = useState(window.scrollY);
+  const [mousePos, setMousePos] = useState({});
+
   const changeNavbarColor = () => {
     if (window.scrollY < scrollY) {
       setColorchange(true);
@@ -22,6 +25,9 @@ const Sidenav = () => {
       setscrollY(window.scrollY);
       setColorchange(false);
     }
+    // console.log("Y-Axis -" + mousePos.y);
+    // console.log("Scroll -" + scrollY);
+    // console.log("ColorChange -" + colorChange);
   };
   window.addEventListener("scroll", changeNavbarColor);
   window.addEventListener("click", changeNavbarColor);
@@ -30,8 +36,32 @@ const Sidenav = () => {
     ? "bg-[#373d49]  opacity-95 bg shadow-md"
     : null;
 
+  useEffect(() => {
+    const handleMouseMove = (event) => {
+      setMousePos({ x: event.clientX, y: event.clientY });
+      if (event.clientY === 0) {
+        setColorchange(true);
+        setscrollY(window.scrollY);
+        // console.log("Y-Axis -" + event.clientY);
+        // console.log("Scroll -" + scrollY);
+        // console.log("ColorChange -" + colorChange);
+      }
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <div>
+      {/* <div>
+        The mouse is at position{" "}
+        <b>
+          ({mousePos.x}, {mousePos.y})
+        </b>
+      </div> */}
+
       <div
         className={
           colorChange
@@ -39,15 +69,20 @@ const Sidenav = () => {
             : `fixed  z-20 flex justify-between items-center md:hidden lg:hidden w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`
         }
       >
-        <AiOutlineMenu
-          onClick={handleNav}
-          className={
-            classNav
-              ? "absolute top-4 right-10 z-[10] md:hidden lg:hidden size={20} text-white cursor-pointer"
-              : "absolute top-4 right-10 z-[10] md:hidden lg:hidden text-[#373d49] cursor-pointer"
-          }
-          size={30}
-        />
+        <div className="flex flex-col justify-between">
+          <a href="#Profile" className="font-bold ml-3 text-[30px]">
+            Marth
+          </a>
+          <AiOutlineMenu
+            onClick={handleNav}
+            className={
+              classNav
+                ? "absolute top-4 right-10 z-[10] md:hidden lg:hidden size={20} text-white cursor-pointer"
+                : "absolute top-4 right-10 z-[10] md:hidden lg:hidden text-[#373d49] cursor-pointer"
+            }
+            size={30}
+          />
+        </div>
       </div>
       {nav && (
         <div

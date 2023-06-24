@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { FaDownload } from "react-icons/fa";
 import { FcAcceptDatabase } from "react-icons/fc";
 import { SiMaterialdesignicons } from "react-icons/si";
+import MyResume from "../assets/RAYMARTH-MESERICORDIA-LEGASPI.pdf";
 import {
   AiOutlineDesktop,
   AiOutlineDatabase,
@@ -50,7 +51,15 @@ const Profile = () => {
             data-aos="fade-down"
             className="flex justify-between text-2xl font-semibold text-center text-[#ffffff] mt-10 mb-5 rounded-xl bg-green-700 p-3 cursor-pointer hover:bg-green-800 lg:w-[40%] shadow-md shadow-gray-500"
           >
-            DOWNLOAD MY CV
+            <a
+              href={MyResume}
+              download="Raymarth.M.Legaspi.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              DOWNLOAD MY CV
+            </a>
+
             <FaDownload className="text-white ml-3" size={30} />
           </h5>
         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import iconCSS from "../assets/css.png";
 import iconGit from "../assets/git.png";
@@ -51,7 +51,7 @@ const Home = () => {
               ]}
               wrapper="span"
               speed={50}
-              style={{ fontSize: "1.8em", display: "inline-block" }}
+              style={{ fontSize: "1.6em", display: "inline-block" }}
               repeat={Infinity}
             />
           </div>
@@ -131,6 +131,10 @@ const Home = () => {
               <ToolTip text={"NETLIFY"}>
                 <img data-aos="flip-left" src={iconNetlify} alt="" />
               </ToolTip>
+            </div>
+
+            <div className="border-1 bg-white w-[100px] h-full lg:p-1.5 p-1.5 rounded-lg font-bold text-green-800 shadow-sm shadow-gray-400 cursor-pointer hover:bg-green-800 hover:text-white mt-5">
+              <a href="#Profile">Click Me!</a>
             </div>
           </div>
         </div>
