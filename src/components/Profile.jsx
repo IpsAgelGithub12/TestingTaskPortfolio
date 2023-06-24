@@ -21,7 +21,7 @@ const Profile = () => {
     //   easing: "ease-in-sine",
     //   delay: 100,
     Aos.init({
-      offset: 200,
+      offset: 100,
       duration: 1000,
       easing: "ease-in-sine",
       delay: 100,
