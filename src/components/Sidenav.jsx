@@ -24,6 +24,7 @@ const Sidenav = () => {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
+  window.addEventListener("click", changeNavbarColor);
 
   const classNav = window.scrollY
     ? "bg-[#373d49]  opacity-95 bg shadow-md"
@@ -34,16 +35,16 @@ const Sidenav = () => {
       <div
         className={
           colorChange
-            ? `${classNav} z-20 fixed flex ease-in-out duration-500 items-center top-0 w-screen h-16 text-white `
-            : `fixed  z-20 flex justify-between items-center w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`
+            ? `${classNav} z-20 fixed flex ease-in-out md:hidden lg:hidden duration-500 items-center top-0 w-screen h-16 text-white `
+            : `fixed  z-20 flex justify-between items-center md:hidden lg:hidden w-screen ease-out-in duration-500 top-[-100%] h-16 text-white`
         }
       >
         <AiOutlineMenu
           onClick={handleNav}
           className={
             classNav
-              ? "absolute top-4 right-10 z-[10] md:hidden lg:hidden size={20} text-white"
-              : "absolute top-4 right-10 z-[10] md:hidden lg:hidden text-gray-800"
+              ? "absolute top-4 right-10 z-[10] md:hidden lg:hidden size={20} text-white cursor-pointer"
+              : "absolute top-4 right-10 z-[10] md:hidden lg:hidden text-[#373d49] cursor-pointer"
           }
           size={30}
         />
@@ -51,7 +52,7 @@ const Sidenav = () => {
       {nav && (
         <div
           onClick={handleNav}
-          className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20"
+          className="fixed w-full h-screen bg-gray-200 flex flex-col justify-center items-center z-20"
         >
           <a
             onClick={handleNav}
@@ -168,7 +169,7 @@ const Sidenav = () => {
         </div>
       </div>
 
-      <div className="fixed block bottom-0 bg-[#001b5e] w-full h-12 z-10"></div>
+      {/* <div className="fixed block bottom-0 bg-[#373d49] w-full h-12 z-10"></div> */}
     </div>
   );
 };

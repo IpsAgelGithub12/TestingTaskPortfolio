@@ -17,7 +17,7 @@ const Projects = () => {
         aperiam, molestiae nihil accusamus voluptate delectus at non numquam
         beatae. Eligendi, praesentium animi!
       </p>
-      <div className="grid sm:grid-cols-2 gap-12">
+      <div className="grid sm:grid-cols-4 gap-4">
         <ProjectsItems img={invSystem} title="Material Management System" />
         <ProjectsItems img={posSystem} title="Point of Sales System" />
         <ProjectsItems img={terminalSytem} title="Bus Terminal System" />
