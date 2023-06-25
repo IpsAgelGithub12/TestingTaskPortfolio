@@ -55,7 +55,7 @@ const Profile = () => {
           >
             <h5
               data-aos="fade-down"
-              className="flex justify-between text-2xl font-semibold text-center text-[#ffffff] mt-10 mb-5 rounded-xl bg-green-700 p-3 cursor-pointer hover:bg-green-800 lg:w-[40%] shadow-md shadow-gray-500"
+              className="flex justify-between text-2xl font-semibold text-center text-[#ffffff] mt-10 mb-5 rounded-xl bg-green-700 p-3 cursor-pointer hover:bg-green-800 lg:w-[100%] shadow-md shadow-gray-500"
             >
               DOWNLOAD MY CV
               <FaDownload className="text-white ml-3" size={30} />
