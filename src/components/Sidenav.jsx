@@ -77,8 +77,8 @@ const Sidenav = () => {
             onClick={handleNav}
             className={
               classNav
-                ? "absolute top-4 right-10 z-[10] md:hidden lg:hidden size={20} text-white cursor-pointer"
-                : "absolute top-4 right-10 z-[10] md:hidden lg:hidden text-[#373d49] cursor-pointer"
+                ? "absolute top-4 right-10 z-[10] md:hidden lg:hidden size={20} text-white cursor-pointer hover:bg-gray-100 hover:text-gray-600 hover:font-bold hover:shadow-gray-400 hover:scale-110 ease-in duration-300"
+                : "absolute top-4 right-10 z-[10] md:hidden lg:hidden text-[#373d49] cursor-pointer hover:bg-gray-600 hover:text-gray-100 hover:font-bold hover:shadow-gray-400 hover:scale-110 ease-in duration-300"
             }
             size={30}
           />
@@ -165,7 +165,7 @@ const Sidenav = () => {
             <div className="flex h-12 right-[2%]">
               <a
                 href="#Home"
-                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+                className="rounded shadow-sm hover:bg-gray-100 hover:text-gray-600 hover:font-bold hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
               >
                 <div className="flex p-3">
                   <AiOutlineHome size={20} className="mr-2" />
@@ -174,7 +174,7 @@ const Sidenav = () => {
               </a>
               <a
                 href="#Profile"
-                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+                className="rounded shadow-sm hover:bg-gray-100 hover:text-gray-600 hover:font-bold hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
               >
                 <div className="flex p-3">
                   <AiOutlineUser size={20} className="mr-2" />
@@ -183,7 +183,7 @@ const Sidenav = () => {
               </a>
               <a
                 href="#Experience"
-                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+                className="rounded shadow-sm hover:bg-gray-100 hover:text-gray-600 hover:font-bold hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
               >
                 <div className="flex p-3">
                   <AiOutlineAppstore size={20} className="mr-2" />
@@ -192,7 +192,7 @@ const Sidenav = () => {
               </a>
               <a
                 href="#Projects"
-                className="rounded shadow-sm hover:bg-gray-100 hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
+                className="rounded shadow-sm hover:bg-gray-100 hover:text-gray-600 hover:font-bold hover:shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300"
               >
                 <div className="flex p-3">
                   <AiOutlineProject size={20} className="mr-2" />

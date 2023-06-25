@@ -47,28 +47,35 @@ const Profile = () => {
           </div>
         </div>
         <div className="w-full lg:flex items-center justify-center">
-          <h5
-            data-aos="fade-down"
-            className="flex justify-between text-2xl font-semibold text-center text-[#ffffff] mt-10 mb-5 rounded-xl bg-green-700 p-3 cursor-pointer hover:bg-green-800 lg:w-[40%] shadow-md shadow-gray-500"
+          <a
+            href={MyResume}
+            download="Raymarth.M.Legaspi.pdf"
+            target="_blank"
+            rel="noreferrer noopener"
           >
-            <a
-              href={MyResume}
-              download="Raymarth.M.Legaspi.pdf"
-              target="_blank"
-              rel="noreferrer noopener"
+            <h5
+              data-aos="fade-down"
+              className="flex justify-between text-2xl font-semibold text-center text-[#ffffff] mt-10 mb-5 rounded-xl bg-green-700 p-3 cursor-pointer hover:bg-green-800 lg:w-[40%] shadow-md shadow-gray-500"
             >
               DOWNLOAD MY CV
-            </a>
-
-            <FaDownload className="text-white ml-3" size={30} />
-          </h5>
+              <FaDownload className="text-white ml-3" size={30} />
+            </h5>
+          </a>
         </div>
 
-        <div className="grid sm:grid-cols-4 gap-3 mt-5">
-          <div className="border-3 rounded-xl p-4 bg-[#373d49] h-full shadow-md shadow-gray-500">
-            <div className="flex">
-              <h2 className="font-bold mr-3 text-[#fcfcfc]">FRONTEND</h2>
+        <div className="grid sm:grid-cols-4 gap-5 mt-10">
+          {/* <div className="absolute mx-[220px]">
+            <div className="block rounded-full my-[-30px] pl-3 pt-3 bg-[#e29912] h-[50px] w-[50px]">
               <AiOutlineDesktop className="text-white" size={25} />
+            </div>
+          </div> */}
+
+          <div className="border-3 rounded-xl p-4 bg-[#373d49] h-full shadow-md shadow-gray-500">
+            <div className="flex mt-[-5px]">
+              <div className="flex bg-[#b97d0e] shadow-sm shadow-gray-900 p-1 w-full justify-center rounded-lg font-bold">
+                <h2 className=" text-[#fcfcfc] mr-2">FRONTEND</h2>
+                <AiOutlineDesktop className="text-white mt-0.5" size={20} />
+              </div>
             </div>
             <p className="my-2 text-base font-normal text-stone-200">
               I can create application using vitejs, react, tailwind and other
@@ -77,10 +84,13 @@ const Profile = () => {
           </div>
 
           <div className="border-3 rounded-xl p-4 bg-[#373d49] h-full shadow-md shadow-gray-500">
-            <div className="flex">
-              <h2 className="font-bold mr-3 text-[#fcfcfc]">BACKEND</h2>
-              <AiOutlineDatabase className="text-white" size={25} />
+            <div className="flex mt-[-5px]">
+              <div className="flex bg-[#b97d0e] shadow-sm shadow-gray-900 p-1 w-full justify-center rounded-lg font-bold">
+                <h2 className=" text-[#fcfcfc] mr-2">BACKEND</h2>
+                <AiOutlineDatabase className="text-white mt-0.5" size={20} />
+              </div>
             </div>
+
             <p className="my-2 text-base font-normal text-stone-200">
               I can handle backend side using Node.js, Visual Studio, WebAPI,
               Entity Frameworks, MySql and SqlServer.
@@ -88,10 +98,13 @@ const Profile = () => {
           </div>
 
           <div className="border-3 rounded-xl p-4 bg-[#373d49] h-full shadow-md shadow-gray-500">
-            <div className="flex">
-              <h2 className="font-bold mr-3 text-[#fcfcfc]">UI/UX DESIGN</h2>
-              <AiOutlineHighlight className="text-white" size={25} />
+            <div className="flex mt-[-5px]">
+              <div className="flex bg-[#b97d0e] shadow-sm shadow-gray-900 p-1 w-full justify-center rounded-lg font-bold">
+                <h2 className=" text-[#fcfcfc] mr-2">UI/UX DESIGN</h2>
+                <AiOutlineHighlight className="text-white mt-0.5" size={20} />
+              </div>
             </div>
+
             <p className="my-2 text-base font-normal text-stone-200">
               I can design using adobe applications such as Adobe Photoshop,
               Illustrator, InDesign, Lightroom and Adobe XD.
@@ -99,12 +112,13 @@ const Profile = () => {
           </div>
 
           <div className="border-3 rounded-xl p-4 bg-[#373d49] h-full shadow-md shadow-gray-500">
-            <div className="flex">
-              <h2 className="font-bold mr-3 text-[#fcfcfc]">
-                AUDIO VIDEO 2D 3D
-              </h2>
-              <AiOutlineCamera className="text-white" size={25} />
+            <div className="flex mt-[-5px]">
+              <div className="flex bg-[#b97d0e] shadow-sm shadow-gray-900 p-1 w-full justify-center rounded-lg font-bold">
+                <h2 className=" text-[#fcfcfc] mr-2">MULTI MEDIA</h2>
+                <AiOutlineCamera className="text-white mt-0.5" size={20} />
+              </div>
             </div>
+
             <p className="my-2 text-base font-normal text-stone-200">
               I can do animation, 2d, 3d design and video making using Adobe
               Premiere, After Effects, SketchUp, Marvelous Designer and Adobe

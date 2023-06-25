@@ -39,7 +39,7 @@ const Home = () => {
       />
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
         <div className="max-w-[80%] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <h1 className="font-bold">HI MY NAME IS</h1>
+          <h1 className="font-bold">HI! MY NAME IS</h1>
           <div className="font-bold">
             <TypeAnimation
               sequence={[
@@ -56,10 +56,42 @@ const Home = () => {
             />
           </div>
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <FaFacebookF className="cursor-pointer" size={20} />
-            <FaInstagram className="cursor-pointer" size={20} />
-            <FaLinkedinIn className="cursor-pointer" size={20} />
-            <FaYoutube className="cursor-pointer" size={20} />
+            <a
+              href="https://www.facebook.com/ISmaelL.Legaspi"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <ToolTip text={"Facebook"}>
+                <FaFacebookF className="cursor-pointer" size={20} />
+              </ToolTip>
+            </a>
+            <a
+              href="https://www.instagram.com/raymarthlegaspi/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <ToolTip text={"Instagram"}>
+                <FaInstagram className="cursor-pointer" size={20} />
+              </ToolTip>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ipsagel143/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <ToolTip text={"LinkedIN"}>
+                <FaLinkedinIn className="cursor-pointer" size={20} />
+              </ToolTip>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC6vME2CeLWplEVkY2PC7jJQ"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <ToolTip text={"Youtube"}>
+                <FaYoutube className="cursor-pointer" size={20} />
+              </ToolTip>
+            </a>
           </div>
 
           <div className="lg:p-0 p-5 mt-5 flex flex-col justify-center max-w-[650px] w-full lg:text-left text-center">
@@ -133,7 +165,7 @@ const Home = () => {
               </ToolTip>
             </div>
 
-            <div className="border-1 bg-white w-[100px] h-full lg:p-1.5 p-1.5 rounded-lg font-bold text-green-800 shadow-sm shadow-gray-400 cursor-pointer hover:bg-green-800 hover:text-white mt-5">
+            <div className="border-1 bg-white w-[100px] h-full lg:pl-4 p-1.5 rounded-lg font-bold text-green-800 shadow-sm shadow-gray-400 cursor-pointer hover:bg-green-800 hover:text-white mt-5">
               <a href="#Profile">Click Me!</a>
             </div>
           </div>
