@@ -99,11 +99,12 @@ const Home = () => {
               OBJECTIVE
             </h2>
             <p className="text-base font-normal text-stone-600">
-              I am looking for a full-time position as a software developer. I
-              would like to utilize my skills and experience. Moreover, I would
-              like to work with other professionals to improve my skills as a
-              software developer which will allow me to further contribute in
-              the field of Information Technology.
+              I am looking for a full-time position as a junior web developer or
+              software developer. I would like to utilize my skills and
+              experience. Moreover, I would like to work with other
+              professionals to improve my skills as a software developer which
+              will allow me to further contribute in the field of Information
+              Technology.
             </p>
 
             <div className="grid grid-cols-12 gap-1 mt-5">
@@ -165,8 +166,12 @@ const Home = () => {
               </ToolTip>
             </div>
 
-            <div className="border-1 bg-white w-[100px] h-full lg:pl-4 p-1.5 rounded-lg font-bold text-green-800 shadow-sm shadow-gray-400 cursor-pointer hover:bg-green-800 hover:text-white mt-5">
-              <a href="#Profile">Click Me!</a>
+            <div className="mt-5">
+              <a href="#Profile">
+                <div className="border-1 bg-white w-[100px] h-full lg:pl-4 p-1.5 rounded-lg font-bold text-green-800 shadow-sm shadow-gray-400 cursor-pointer hover:bg-green-800 hover:text-white ">
+                  Click Me!
+                </div>
+              </a>
             </div>
           </div>
         </div>
