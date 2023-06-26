@@ -162,7 +162,7 @@ const Profile = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
           {/* <div className="absolute mx-[220px]">
             <div className="block rounded-full my-[-30px] pl-3 pt-3 bg-[#e29912] h-[50px] w-[50px]">
               <AiOutlineDesktop className="text-white" size={25} />
