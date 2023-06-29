@@ -11,12 +11,7 @@ const Projects = () => {
       <h1 className="text-4xl font-bold text-center text-[#001b5e] mt-5">
         Projects
       </h1>
-      <p className="text-center py-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-        recusandae necessitatibus quas ipsam id accusantium, earum distinctio
-        aperiam, molestiae nihil accusamus voluptate delectus at non numquam
-        beatae. Eligendi, praesentium animi!
-      </p>
+      <p className="text-center py-8">Sample applications that we developed.</p>
       <div className="grid sm:grid-cols-4 gap-4">
         <ProjectsItems img={invSystem} title="Material Management System" />
         <ProjectsItems img={posSystem} title="Point of Sales System" />

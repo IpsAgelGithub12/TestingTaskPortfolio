@@ -228,7 +228,7 @@ const Profile = () => {
       </div>
 
       {/* BACK GROUND HIGHLIGHTS */}
-      <div className="h-full w-full bg-slate-100">
+      <div className="h-[30%] w-full bg-slate-100">
         <div className="max-w-[1040px] m-auto p-4 py-5">
           <div>
             <h1 className="text-4xl font-bold text-center text-[#001b5e] mt-5 mb-5">
@@ -269,12 +269,12 @@ const Profile = () => {
             </div>
 
             <div className="items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
-              <div className="text-white p-3 text-[14px]">
+              <div className="text-white p-3 lg:text-[14px] text-[13px]">
                 <p>
                   I'm the one who participate to debug, fixed and create new
                   features to those applications based on the client
                   requirements for almost.
-                  <span className="bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
+                  <span className="inline-block bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 lg:ml-2">
                     7 years
                   </span>
                 </p>
@@ -313,14 +313,14 @@ const Profile = () => {
               </ul>
             </div>
 
-            <div className="relative flex items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
-              <div className="text-white p-3 text-[14px]">
+            <div className="items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
+              <div className="text-white p-3 lg:text-[14px] text-[66%]">
                 <p>
                   PLMS is my first created vb.net software way back 2015, I
                   tried to convert MMS V6.0 to MMS VB.Net programming language
                   to have amazing and user friendly design. MCP is my latest
                   vb.net project started from the scratch.
-                  <span className="bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
+                  <span className="inline-block bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
                     6 years
                   </span>
                 </p>
@@ -359,13 +359,13 @@ const Profile = () => {
               </ul>
             </div>
 
-            <div className="relative flex items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
-              <div className="text-white p-3 text-[14px]">
+            <div className="relative items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
+              <div className="text-white p-3 lg:text-[14px] text-[13px]">
                 <p>
                   I'm part of web developer to help our programmers if necessary
                   to meet our client deadlines. I also tried to convert MMS V6.0
                   to MMS Web Application.
-                  <span className="bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
+                  <span className="inline-block bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
                     3 years
                   </span>
                 </p>
@@ -405,12 +405,12 @@ const Profile = () => {
             </div>
 
             <div className="relative items-center rounded-b-xl p-0 mt-2 w-[100%] h-auto bg-green-800">
-              <div className="text-white p-3 text-[14px]">
+              <div className="text-white p-3 lg:text-[14px] text-[13px]">
                 <p>
                   These past few months, I decided to learned something new
                   that's why I crated my first portfolio using React JS, Vites
                   JS and Tailwind CSS for almost 2 weeks.
-                  <span className="bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
+                  <span className="inline-block bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
                     3 months
                   </span>
                 </p>
