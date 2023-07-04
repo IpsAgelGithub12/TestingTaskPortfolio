@@ -19,6 +19,7 @@ import iconVbnet from "../assets/vbnet.png";
 import iconVb6 from "../assets/vb6.png";
 import iconVite from "../assets/vitejs.png";
 import Background from "../assets/background.jpg";
+import iconWordPress from "../assets/wordpress.png";
 import { ToolTip } from "./ToolTip";
 import {
   FaFacebookF,
@@ -163,6 +164,9 @@ const Home = () => {
               </ToolTip>
               <ToolTip text={"NETLIFY"}>
                 <img data-aos="flip-left" src={iconNetlify} alt="" />
+              </ToolTip>
+              <ToolTip text={"WORDPRESS"}>
+                <img data-aos="flip-left" src={iconWordPress} alt="" />
               </ToolTip>
             </div>
 

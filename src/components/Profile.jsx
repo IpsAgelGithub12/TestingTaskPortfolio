@@ -145,6 +145,9 @@ const Profile = () => {
             <img src={my2x2pic} alt="" className="rounded-full" />
           </div>
         </div>
+        <div className="p-2 text-center mt-3">
+          For more details about me? Click the button below.
+        </div>
         <div className="w-full lg:flex items-center justify-center">
           <a
             href={MyResume}
