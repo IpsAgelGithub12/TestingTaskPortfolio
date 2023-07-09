@@ -410,11 +410,11 @@ const Profile = () => {
             <div className="relative items-center rounded-b-xl p-0 mt-2 w-[100%] h-auto bg-green-800">
               <div className="text-white p-3 lg:text-[14px] text-[13px]">
                 <p>
-                  These past few months, I decided to learned something new
-                  that's why I crated my first portfolio using React JS, Vites
-                  JS and Tailwind CSS for almost 2 weeks.
+                  Last year, I decided to learned something new that's why I
+                  created my first portfolio using React JS, Vites JS and
+                  Tailwind CSS for almost 2 weeks.
                   <span className="inline-block bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
-                    3 months
+                    1 Year
                   </span>
                 </p>
               </div>
