@@ -271,7 +271,7 @@ const Profile = () => {
               </ul>
             </div>
 
-            <div className="items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
+            <div className="items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-auto bg-green-800">
               <div className="text-white p-3 lg:text-[14px] text-[13px]">
                 <p>
                   I'm the one who participate to debug, fixed and create new
@@ -316,7 +316,7 @@ const Profile = () => {
               </ul>
             </div>
 
-            <div className="items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
+            <div className="items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-auto bg-green-800">
               <div className="text-white p-3 lg:text-[14px] text-[66%]">
                 <p>
                   PLMS is my first created vb.net software way back 2015, I
@@ -362,7 +362,7 @@ const Profile = () => {
               </ul>
             </div>
 
-            <div className="relative items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-[100px] bg-green-800">
+            <div className="relative items-center rounded-b-xl justify-center group p-0 mt-2 w-[100%] h-auto bg-green-800">
               <div className="text-white p-3 lg:text-[14px] text-[13px]">
                 <p>
                   I'm part of web developer to help our programmers if necessary
