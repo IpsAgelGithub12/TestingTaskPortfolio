@@ -277,7 +277,7 @@ const Profile = () => {
                   I'm the one who participate to debug, fixed and create new
                   features to those applications based on the client
                   requirements for almost.
-                  <span className="inline-block bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 lg:ml-2">
+                  <span className="inline-block bg-[#b97d0e] font-bold rounded px-2.5 py-0.5 ml-2">
                     7 years
                   </span>
                 </p>
